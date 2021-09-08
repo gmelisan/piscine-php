@@ -1,0 +1,23 @@
+
+<- Vertex ----------------------------------------------------------------------
+The Vertex class handles vertex coordinations.
+
+An instance can be constructed from 3 mandatory characteristics (x, y, z) with 2
+optional (w, color):
+
+	 new Vertex( array( 'x' => 0.0, 'y' => 0.0, 'z' => 0.0 ) );
+	 new Vertex( array( 'x' => 0.0, 'y' => 0.0, 'z' => 0.0,
+		 	 	 'w' => 0.5, 'color' => $color ) ); // $color has type Color
+
+By default, `w` has value of '1.0' and `color` is an instance of Color class
+defined as:
+
+		new Color(array("rgb" => 0xFFFFFF)); // white color
+
+The class provides getters and setters for all 5 attributes:
+
+	$foo = new Vertex( array( 'x' => 0.0, 'y' => 0.0, 'z' => 0.0 ) );
+	$foo->x = 1;
+	echo $foo->x; // 1
+	// same for y, z, w, color
+---------------------------------------------------------------------- Vertex ->

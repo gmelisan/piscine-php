@@ -1,0 +1,65 @@
+<html>
+  <head>
+	<meta charset="utf-8">
+	<title>calc</title>
+	<style>
+	</style>
+	<script>
+	   window.onload = function () {
+	  	  setInterval(function() {
+	   		  alert("Please, use me...");
+	   	  }, 30000);
+       }
+	  
+			function tryme() {
+		  event.preventDefault();
+		  var c = document.forms["calc"];
+		  var left = parseInt(c[0].value);
+		  var op = c[1].value;
+			var right = parseInt(c[2].value);
+
+		  if (left < 0 || right < 0) {
+		  	  alert("Error :(");
+		  	  return false;
+		  }
+		  var msg = "";
+		  if ((op == '/' || op == '%') && right == "0")
+		  	  msg = "It's over 9000!";
+		  else
+		  	  msg = getResult(left, op, right);
+	  	  console.log(msg);
+	  	  alert(msg);
+	  }
+
+	  function getResult(left, op, right) {
+	  	  switch (op) {
+	  	  case '+':
+	  		  return left + right;
+	  	  case '-':
+	  		  return left - right;
+	  	  case '*':
+	  		  return left * right;
+	  	  case '/':
+	  		  return left / right;
+	  	  case '%':
+	  		  return left % right;
+	  	  }
+	  }
+	</script>
+  </head>	
+  <body>
+	<form id="calc">
+	  <input type="text" value="">
+	  <select>
+		<option>+</option>
+		<option>-</option>
+		<option>*</option>
+		<option>/</option>
+		<option>%</option>
+	  </select>
+	  <input type="text" value="">
+	  <br>
+	  <input type="submit" value="Try me!" onclick="tryme();">
+	</form>
+  </body>
+</html>

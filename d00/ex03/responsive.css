@@ -1,0 +1,79 @@
+body {
+	background-image: url("https://images.wallpaperscraft.ru/image/zvezdy_kosmos_nebo_blesk_116409_1920x1080.jpg");
+	background-color: white;
+}
+div.header {
+	background-color: rgba(255, 255, 255, 0.8);
+	font-size: 1vw;
+}
+h1 {
+	text-align: center;
+}
+div.pertab
+{
+	position: relative;
+	top: 20;
+	width: 90vw;
+	margin: 0 auto;
+}
+table {
+	background-color: rgba(0, 0, 0, 0);
+}
+tr.top td, td.left, td.star {
+	text-align: center;
+	background-color: rgba(255, 255, 255, 0.8);
+	font-size: 1vw;
+	width: 1vw;
+}
+td {
+	text-align: center;
+	width: 5vw;
+}
+div.atom {
+	font-size: 0.5vw;
+	text-align: right;
+}
+div.n
+{
+	font-size: 0.5vw;
+	text-align: left;
+}
+div.name {
+	font-size: 1.2vw;
+	margin: 1vw;
+	font-weight: bold;
+	text-align: center;
+}
+td.g1 {
+	background-color: #ccff99;
+}
+td.g2 {
+	background-color: #66ffff;
+}
+td.g3 {
+	background-color: #ff6666;
+}
+td.g4 {
+	background-color: #ffcc99;
+}
+td.g5 {
+	background-color: #cccc99;
+}
+td.g6 {
+	background-color: #ffff99;
+}
+td.g7 {
+	background-color: #bfbfbf;
+}
+td.g8 {
+	background-color: #ffcccc;
+}
+td.g9 {
+	background-color: #ffccff;
+}
+td.g10 {
+	background-color: #ff99ff;
+}
+td.g11 {
+	background-color: #66ff99;
+}

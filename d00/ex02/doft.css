@@ -1,0 +1,144 @@
+body {
+	background-color: #505050;
+}
+
+div.header, div.cluster, div.left, div.right, div.bot {
+	background-color: #909090;
+	border-radius: 10px;
+	box-shadow: 10px 10px 10px 2px black;
+}
+
+div.header {
+	width: 1420px;
+	height: 138px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+}
+
+img.doft42 {
+	height: 85%;
+	margin: 10px;
+}
+
+div.loupe {
+	text-align: right;
+	position: relative;
+	top: -125px;
+	right: 30px;
+}
+
+img.reload {
+	width: 20px;
+}
+
+div.reload {
+	text-align: right;
+	position: relative;
+	top: -275;
+	right: 10;
+	
+}
+
+div.close {
+	text-align: right;
+	position: relative;
+	top: -195;
+	right: 10;
+}
+
+div.center {
+	width: 1366px;
+	height: 526px;
+	margin: auto;
+}
+
+div.cluster
+{
+	width: 1020px;
+	height: 584px;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	float: left;
+}
+
+img.cluster {
+	width: 1000px;
+	height: 562px;
+	margin: 10;
+}
+
+div.left {
+	width: 140;
+	height: 425;
+	margin-top: 20px;
+	float: left;
+	margin-right: 30px;
+}
+
+div.right {
+	width: 140;
+	height: 425;
+	margin-top: 20px;
+	margin-left: 30px;
+	float: left;
+	
+}
+
+img.pics {
+	display: block;
+	width: 64px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	margin-left: auto;
+	margin-right: auto;	
+}
+
+img.oeil {
+	border: 5px solid #FC0000;
+	border-radius: 5px;
+}
+
+div.brick {
+	background-image: url("resources/brick.jpg");
+	background-repeat: repeat;
+	width: 120px;
+	height: 70px;
+	margin: auto;
+}
+
+div.bot {
+	position: relative;
+	width: 520px;
+	height: 170px;
+	background-color: #88FF89;
+	top: 525px;
+	left: -70px;
+}
+
+div.text {
+	position: absolute;
+	font-family: Arial;
+	font-size: 18px;
+	margin: 10px;
+	margin-top: 10px;
+	top: 0;
+	left: 0;
+}
+
+.ord {
+	text-shadow: 5px 5px 3px red;
+}
+
+.entrez {
+	font-size: 32px;
+	font-family: Georgia;
+}
+
+button {
+	font-family: Arial;
+	font-size: 12px;
+	padding: 2px;
+	width: 70px;
+}

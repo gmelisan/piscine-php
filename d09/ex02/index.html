@@ -1,0 +1,36 @@
+<body>
+    <head>
+        <title>To do or not to do</title>
+        <script
+			  src="https://code.jquery.com/jquery-3.4.1.min.js"
+			  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+			  crossorigin="anonymous"></script>
+        <script src="todo.js"></script>
+        <meta charset="utf-8">
+    </head>
+    <style>
+    div.item  {
+        width: 200px;
+        height: 25px;
+        border: 1px solid black;
+        border-radius: 10px;
+        text-align: center;
+        padding-top: 10px;
+        margin: 5px;
+    }
+    div.item:hover {
+        background-color: rgb(236, 236, 236);
+    }
+    input {
+        margin: 10px;
+        width: 100px;
+
+    }
+    </style>
+    <body>
+        <h1>To do or not to do</h1>
+        <input type="submit" value="New " onclick="newItem();">
+        <div id="ft_list">
+        </div> 
+    </body>
+</body>

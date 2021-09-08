@@ -1,0 +1,70 @@
+<html>
+  <head>
+	<meta charset="utf-8">
+	<title>Balloon</title>
+	<style>
+	  div#balloon {
+		  width: 200px;
+		  height: 200px;
+		  border-radius: 50%;
+		  background-color: #FF0000;
+		  margin: auto;
+	  }
+	</style>
+	<script
+			src="https://code.jquery.com/jquery-3.4.1.min.js"
+			integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+			crossorigin="anonymous"></script>
+	<script>
+	  var list = ["rgb(255, 0, 0)", "rgb(0, 255, 0)", "rgb(0, 0, 255)"];
+
+	  function nextColor(color) {
+		  if (color == list[0])
+			  return list[1];
+		  if (color == list[1])
+			  return list[2];
+		  if (color == list[2])
+			  return list[0];
+	  }
+
+	  function prevColor(color) {
+		  if (color == list[0])
+			  return list[2];
+		  if (color == list[1])
+			  return list[0];
+		  if (color == list[2])
+			  return list[1];
+	  }
+
+		$(document).ready(function() {
+			$("#balloon").click(function() {
+				var oldwidth = $(this).css("width");
+				var oldheight = $(this).css("height");
+				$(this).css("width", parseInt(oldwidth) + 10);
+				$(this).css("height", parseInt(oldheight) + 10);
+				if (parseInt($(this).css("width")) > 420) {
+					$(this).css("width", 200);
+					$(this).css("height", 200);
+				}
+				var oldbgc = $(this).css("background-color");
+				$(this).css("background-color", nextColor(oldbgc));
+			});
+
+			$("#balloon").mouseout(function() {
+				if (parseInt($(this).css("width")) >= 205) {
+					var oldwidth = $(this).css("width");
+					var oldheight = $(this).css("height");
+					$(this).css("width", parseInt(oldwidth) - 5);
+					$(this).css("height", parseInt(oldheight) - 5);
+				}
+				var oldbgc = $(this).css("background-color");
+				$(this).css("background-color", prevColor(oldbgc));
+
+			});
+		});
+	</script>
+  </head>
+  <body>
+  <div id="balloon"></div>
+  </body>
+</html>
